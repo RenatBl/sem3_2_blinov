@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="600.0" maxWidth="1000.0" minHeight="600.0" minWidth="1000.0" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.clicker.controllers.MenuController">
+    <ImageView fitHeight="600.0" fitWidth="1000.0" layoutX="2.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@/images/menu.png" />
+        </image>
+    </ImageView>
+   <Button fx:id="start" onMouseClicked="#startGame" layoutX="438.0" layoutY="229.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="175.0" text="Start Game">
+      <font>
+         <Font name="Georgia Bold" size="22.0" />
+      </font>
+   </Button>
+   <TextField fx:id="tf" layoutX="447.0" layoutY="300.0" prefHeight="37.0" prefWidth="157.0" promptText="host">
+      <font>
+         <Font size="15.0" />
+      </font>
+   </TextField>
+   <Button fx:id="exit" onMouseClicked="#exitGame" layoutX="438.0" layoutY="392.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="175.0" text="Exit">
+      <font>
+         <Font name="Georgia Bold Italic" size="27.0" />
+      </font>
+   </Button>
+</AnchorPane>

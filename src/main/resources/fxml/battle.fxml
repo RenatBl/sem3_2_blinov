@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.itis.clicker.controllers.BattleController">
+    <children>
+        <ImageView fitHeight="600.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@/images/battle.png" />
+            </image>
+        </ImageView>
+
+        <Circle fx:id="circle" fill="#3902ff" onMouseClicked="#click" radius="10" />
+
+        <Label fx:id="name" alignment="CENTER" layoutX="421.0" layoutY="556.0" prefHeight="30.0" prefWidth="119.0">
+            <font>
+                <Font name="Georgia Bold" size="20.0" />
+            </font>
+        </Label>
+
+        <Label fx:id="score" alignment="CENTER" layoutX="554.0" layoutY="556.0" prefHeight="30.0" prefWidth="50.0">
+            <font>
+                <Font name="Georgia Bold" size="20.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1fffd23d" height="30.0" layoutX="413.0" layoutY="556.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+      <VBox fx:id="box" alignment="CENTER" layoutX="438.0" layoutY="267.0" prefHeight="66.0" prefWidth="149.0">
+         <children>
+            <TextField fx:id="input" prefHeight="26.0" prefWidth="80.0" />
+            <Button fx:id="ready" onMouseClicked="#ready" mnemonicParsing="false" text="Ready" />
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
